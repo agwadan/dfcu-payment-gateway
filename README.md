@@ -184,3 +184,17 @@ Your frontend should now be running on `http://localhost:5173/` (or default Reac
 - Move the database to a cloud service to improve scalability and security.
 - Improve the UI/UX by adding authentication pages to allow users signup and login to perform transactions.
 - Set up Continuous Integration and Continuous Deployment.
+
+## Screenshots
+
+### Transaction History
+
+![image](https://github.com/user-attachments/assets/7e773a6f-f02b-4cab-81c1-b84697954b73)
+
+### Intiate New Payment
+![image](https://github.com/user-attachments/assets/fadac886-aa57-416a-b29b-8b813714212d)
+
+### Transaction Details
+![image](https://github.com/user-attachments/assets/cbd5c7ff-fb45-4142-946d-4a726d761b56)
+
+
