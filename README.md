@@ -24,7 +24,7 @@ It supports payment initiation, transaction status checking, and fetching all pa
 {
   "payer": "1234567890",
   "payee": "0987654321",
-  "amount": 100.50,
+  "amount": 100.5,
   "currency": "USD",
   "payerReference": "Invoice123"
 }
@@ -114,7 +114,7 @@ cd dfcu-payment-gateway
 
 ```bash
 cd payment-gateway-backend
-npm install or yarn 
+npm install or yarn
 ```
 
 #### Create a `.env` file:
@@ -163,7 +163,7 @@ npm install or yarn
 npm start
 ```
 
-Your frontend should now be running on `http://localhost:3001` (or default React port).
+Your frontend should now be running on `http://localhost:5173/` (or default React port). Please note that it is important that the frontend runs from this address or it will be blocked by the CORS policy.
 
 ---
 
@@ -171,7 +171,7 @@ Your frontend should now be running on `http://localhost:3001` (or default React
 
 - Ensure MySQL is running and credentials in `.env` match your setup.
 - Backend runs on port 3000 by default.
-- Frontend communicates with backend via `http://localhost:3000/api/...`
+- Frontend communicates with backend via `http://localhost:3000/api/payments/...`
 
 ### Assumptions
 
