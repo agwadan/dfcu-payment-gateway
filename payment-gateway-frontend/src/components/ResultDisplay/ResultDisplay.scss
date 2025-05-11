@@ -1,0 +1,17 @@
+.result-display {
+  h2 {
+    text-align: center;
+    color: #013e7b;
+  }
+  p {
+    border-bottom: 1px #013e7b2e solid;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    strong {
+      color: #013e7b;
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.payment-form {
+  h2 {
+    text-align: center;
+    color: #013e7b;
+  }
+  .api-error {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffeeee;
+    border-left: 4px solid #ff5252;
+    border-radius: 4px;
+
+    .error-message {
+      color: #ff5252;
+      font-weight: bold;
+      margin: 0 0 5px 0;
+    }
+
+    .error-help {
+      color: #666;
+      margin: 5px 0 0 0;
+      font-size: 0.9em;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border: none;
+      border-bottom: 1px #013e7b69 solid;
+    }
+
+    button {
+      border: none;
+      background-color: #013e7b;
+      color: white;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      border-radius: 0.2rem;
+    }
+  }
+}
