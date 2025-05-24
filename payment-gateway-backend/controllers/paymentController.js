@@ -206,3 +206,22 @@ exports.getAllPayments = async (req, res) => {
     });
   }
 };
+
+/*==== Filter by date ====*/
+exports.filterByDate = async (req, res) => {
+  const { startDate, endDate } = req.body;
+
+  try {
+    const [rows] = await pool.execute(
+      `SELECT * FROM transactions WHERE created_at BETWEEN ? AND ?`,
+      [startDate, endDate]
+    );
+
+    res.status(200).json(rows);
+  } catch (error) {
+    res.status(400).send({
+      statusCode: 400,
+      message: "There was an error filtering the transactions",
+    });
+  }
+};
