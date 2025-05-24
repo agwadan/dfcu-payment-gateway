@@ -42,6 +42,8 @@ const TransactionsList = () => {
       <img src={Logo} className="logo" alt="DFCU Logo" />
       <div className="header">
         <h2>Transaction History</h2>
+
+        {/* ==== Button to set new transaction ==== */}
         <button onClick={() => setShowPaymentForm(true)}>
           New Transaction
         </button>

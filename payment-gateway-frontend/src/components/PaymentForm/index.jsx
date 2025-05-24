@@ -8,7 +8,6 @@ const PaymentForm = ({ onSuccess }) => {
     payee: "",
     amount: "",
     currency: "UGX",
-    payerReference: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -133,14 +132,6 @@ const PaymentForm = ({ onSuccess }) => {
           required
         />
         {errors.currency && <p className="error">{errors.currency}</p>}
-
-        <input
-          type="text"
-          name="payerReference"
-          placeholder="Payer Reference (optional)"
-          value={formData.payerReference}
-          onChange={handleChange}
-        />
 
         <button type="submit" disabled={loading}>
           {loading ? "Processing..." : "Submit Payment"}

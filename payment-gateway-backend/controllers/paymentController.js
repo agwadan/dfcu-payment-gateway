@@ -149,7 +149,7 @@ exports.checkPaymentStatus = async (req, res) => {
     if (rows.length === 0) {
       console.warn("[NOT FOUND] No transaction found");
       return res.status(404).json({
-        statusCode: 400,
+        statusCode: 404,
         message: "Transaction failed ❌: Transaction not found.",
       });
     }

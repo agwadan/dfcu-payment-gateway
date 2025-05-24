@@ -8,11 +8,12 @@ app.use(express.json());
 
 const allowedOrigin = "http://localhost:5173";
 
-app.use(
+app.use(cors());
+/* app.use(
   cors({
     origin: allowedOrigin,
   })
-);
+); */
 
 app.use("/api/payments", paymentRoutes);
 

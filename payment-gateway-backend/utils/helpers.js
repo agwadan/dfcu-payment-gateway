@@ -4,9 +4,9 @@ const simulatePaymentOutcome = () => {
   if (random < 10) {
     return "PENDING"; /* ==============> 10% chance */
   } else if (random < 15) {
-    return "FAILED"; /* ===============> 5% chance */
+    return "SUCCESSFUL"; /* ===============> 5% chance */
   } else {
-    return "SUCCESSFUL"; /* ===========> 85% chance */
+    return "FAILED"; /* ===========> 85% chance */
   }
 };
 
